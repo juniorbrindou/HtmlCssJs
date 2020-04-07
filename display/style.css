@@ -1,0 +1,20 @@
+.liste1{display: flex;}
+.liste1>li{list-style: none; background-color: chocolate; margin: 0 5px;}
+
+.liste2{display: flex; flex-direction: column;}
+.liste2>li{list-style: none; background-color: chocolate; margin: 0 5px;}
+
+.liste3{display: flex; flex-direction: column-reverse;}
+.liste3>li{list-style: none; background-color: chocolate; margin: 0 5px;}
+
+.liste4{display: flex; flex-direction: row;}
+.liste4>li{list-style: none; background-color: chocolate; margin: 0 5px;}
+
+.liste5{display: flex; flex-direction: row-reverse;}
+.liste5>li{list-style: none; background-color: chocolate; margin: 0 5px;}
+
+.liste6{display: flex; flex-direction: row; justify-content: center;}
+.liste6>li{list-style: none; background-color: chocolate; margin: 0 5px;}
+
+.liste7{display: flex; flex-direction: row-reverse; justify-content: space-around;}
+.liste7>li{list-style: none; background-color: chocolate; margin: 0 5px;}
