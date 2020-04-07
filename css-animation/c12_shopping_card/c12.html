@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="c12.css">
+    <title>Document</title>
+</head>
+<body class="basket">
+    <header>
+        <h1>Sports Clothing</h1>
+        <div class="basket-ico"><img src="../css-animations-playlist-master/web-examples/img/basket.png" alt=""></div>
+    </header>
+    <ul>
+        <li draggable="true">
+            <img src="../css-animations-playlist-master/web-examples/img/t-1.jpg" alt="une image">
+            <h2>Green T-Shirt</h2>
+            <button>add to basket</button>
+        </li>
+        <li>
+            <img src="../css-animations-playlist-master/web-examples/img/t-3.jpg" alt="image cinquieme">
+            <h2>Pink T-Shirt</h2>
+            <button>add to basket</button>
+        </li>
+        <li>
+            <img src="../css-animations-playlist-master/web-examples/img/t-2.jpg" alt="image deuieme">
+            <h2>Yellow T-Shirt</h2>
+            <button>add to basket</button>
+        </li>
+        <li>
+            <img src="../css-animations-playlist-master/web-examples/img/t-1.jpg" alt="image troisieme">
+            <h2>Green T-Shirt</h2>
+            <button>add to basket</button>
+        </li>
+        <li>
+            <img src="../css-animations-playlist-master/web-examples/img/t-2.jpg" alt="image quatrieme">
+            <h2>Yellow T-Shirt</h2>
+            <button>add to basket</button>
+        </li>
+        
+    </ul>
+    <script src="jquery.js"></script>
+    <script>
+        $("button").on('click',function(){
+            $(this).closest("li")
+            .find("img")
+            .clone()
+            .addClass('zoom')
+            .appendTo('body');
+            setTimeout(function(){
+                $(".zoom").remove();
+            },1000);
+        });
+    </script>
+</body>
+</html>

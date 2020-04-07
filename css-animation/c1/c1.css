@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: lightblue;
+}
+.cloud{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cloud1 img:hover{
+    transition-duration: 1s;
+    transform: translate(300px, 500px);
+}
+.cloud2 img:hover{
+    transition-duration: 1s;
+    transform: scale(2,3);
+}
+.cloud3 img:hover{
+    transition-duration: 1s;
+    transform: rotate(360deg);
+}
