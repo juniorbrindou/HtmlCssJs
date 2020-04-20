@@ -1,7 +1,6 @@
 body{
     background: darkseagreen;
 }
-
 .container{
     margin-top: 12%;
 }
@@ -12,9 +11,9 @@ body{
 }
 .single-content .text-content,
 .single-content:after{
-position: absolute;
-left: 20px;
-right: 20px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
 }
 .single-content:after{
     content: '';
