@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Titre</title>
+</head>
+<body>
+<button onclick="covEuroFranc('',0)">Euro <--> Franc</button>
+<script>
+function covEuroFranc(variable1, montant){
+	var variable1 = prompt("Unité de départ:\nFranc=fr\nEuro=else")
+	var montant = prompt('Montant')
+	if (variable1 =='fr') {
+		alert(montant +'Francs = ' +montant/655.957+' Euro')
+	}else{
+		alert(montant +'Euro = ' +montant*655.957+' Francs')
+	}
+}
+</script>
+</body>
+</html>

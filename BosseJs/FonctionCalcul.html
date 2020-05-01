@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calco</title>
+	<style type="text/css">
+		html,body{margin: 0;padding: 0; height: 100Vh; background: #e0dcdc}
+		.calc{text-align: center;}
+		input{margin: 10px}.btn{text-align: center;margin-bottom: 20px}
+		.ecran{height: 100px;width: 400px;border: 1px dashed;background: white;margin: auto;font-size: xxx-large;}
+	</style>
+</head>
+<body>
+<div class="calc">
+	<input id="n1" type="number" placeholder="Nombre 1 ">
+	<input id="n2" type="number" placeholder="Nombre 2 ">
+	<br>
+	<div class="btn">
+		<button onclick="foncAdd()">+</button>
+		<button onclick="foncSous()">-</button>
+		<button onclick="foncProd()">x</button>
+		<button onclick="foncQuot()">/</button>
+	</div>
+	<div class="ecran"></div>
+</div>
+<script>
+	var n1 = document.getElementById("n1")
+	var n2 = document.getElementById("n2")
+	var ecran = document.querySelector(".ecran")
+
+	function foncAdd(){
+		ecran.innerText = (parseInt(n1.value)+parseInt(n2.value))
+	}
+	function foncSous(){
+		ecran.innerText = (parseInt(n1.value)-parseInt(n2.value))
+	}
+	function foncProd(){
+		ecran.innerText = (parseInt(n1.value)*parseInt(n2.value))
+	}
+	function foncQuot(){
+		ecran.innerText = (parseInt(n1.value)/parseInt(n2.value))
+	}
+</script>
+</body>
+</html>

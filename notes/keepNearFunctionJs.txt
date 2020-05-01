@@ -1,0 +1,88 @@
+Math.ceil() : le plus petit entier sup ou egal
+Math.ceil(4) : 4
+Math.ceil(-4): -4
+Math.ceil(4.1): 5
+Math.ceil(-4.1):-4
+
+Math.exp() : la fonction exponentielle
+Math.exp(1) : 0
+
+Math.floor() : plus grand entier inf ou egal
+Math.floor(10) 10
+Math.floor(10.9) 11
+Math.floor(10.1) 11
+Math.floor(-10) -10
+Math.floor(-10.2) -11
+Math.floor(-10.99) -11
+
+Math.hypot() : la racine carrée de la somme des carrées des arguments
+Math.hypot(1,2,3) 	// racine(1^2+2^2+3^2) = racine(15)
+Math.hypot(2,3) 	// 5
+
+Math.imul(a,b) 		// produit de deux nombres
+Math.imul(2,5) 		// 10
+
+Math.log() 			// la fonction logarithme normale
+Math.log(Math.exp(5))//5
+Math.log(1) //0
+
+Math.max() // renvoie le plus grand élément parmis les argument en parametre ou du tableau
+Math.max(1,15,89,2) // 89
+Math.max([1,5,3]) 	// 5
+
+Math.min()
+
+Math.pow(a, b) 		// renvoie a exposant b
+Math.pow(-2, 3) 	// NaN
+Math.pow(2, 1/2); 	// 1.4142135623730951 (racine carrée de 2)
+Math.pow(7, -1); 	// (1/7)
+Math.pow(7, -2); 	// (1/49)
+
+Math.round(a)		// lentier arrondi le plus proche
+Math.round(20.49); 	//  20
+Math.round(20.5);  	//  21
+Math.round(42);    	//  42
+Math.round(-20.5); 	// -20
+Math.round(-20.51);	// -21
+
+Math.sign(a)		//le signe d'un nombre 1=positif|-1=negatif|0=null|NaN=Erreur
+Math.sign(3)     	//  1
+Math.sign(-3)    	// -1
+Math.sign("-3")  	// -1
+Math.sign(0)     	//  0
+Math.sign(-0)    	// -0
+Math.sign(NaN)   	// NaN
+Math.sign("foo") 	// NaN
+Math.sign()      	// NaN
+
+Math.sqrt()			//Racine carrée
+Math.sqrt(9);  		// 3
+Math.sqrt(-1); 		// NaN
+Math.sqrt(-0); 		// -0
+
+Math.trunc() 		//troncature entier d'un nombre c'est pas arrondie, ilcoupe
+Math.trunc(13.37);   // 13
+Math.trunc(-0.123);  // -0
+Math.trunc("-1.123");// -1
+Math.trunc("toto");  // NaN
+Math.trunc();        // NaN
+
+Math.PI()			//la valeur de pi
+
+
+
+parseInt() 		analyse une chaîne de caractère fournie en argument et renvoie un entier exprimé dans une base donnée.
+
+parseInt("0xF", 16);   		//15
+parseInt("F", 16);     		//15
+parseInt("17", 8);		//15
+parseInt(021, 8);		//15
+parseInt("015", 10); // attention parseInt(015, 10); renvoie 13
+parseInt(15.99, 10);		//15
+parseInt("15,123", 10);		//15
+parseInt("FXX123", 16);		//15
+parseInt("1111", 2);		//15
+parseInt("15*3", 10);		//15
+parseInt("15e2", 10);		//15
+parseInt("15px", 10);		//15
+parseInt("12", 13);		//15
