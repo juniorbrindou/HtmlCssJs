@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+            var min = prompt("Saisir un nombre entre [0-50]")
+        }while(min>50 || min<0)
+        do{
+            var max = prompt("Saisir un nombre entre [51-100]")
+        }while (max > 100 || max < 51)
+        
+        function nb_aleatoire(min, max) {
+            do{
+                var nb = min + (max - min + 1) * Math.random();
+            }while(nb>100)
+            return Math.floor(nb);
+        }
+        nb = (nb_aleatoire(min,max))
+        cpt = 0
+        function PoM(min,max){
+            alert('Vous devez choisir un nombre entre ['+min+' - '+max+']')
+            do{
+                cpt +=1
+                choix = prompt('Devinez le nombre [' + min + ' - ' + max + ']')
+                if(nb > choix){
+                    alert(choix+' est Inférieur')
+                }else if(choix > nb){
+                    alert(choix+' est Suppérieur')
+                }else{
+                    alert('Victoire!!! Apres '+cpt+' Tentatives.')
+                }
+            }while(choix !=nb)
+        }
+        do{
+            PoM(min,max)
+        }while(reponse == null)
+
+    </script>
+</body>
+</html>

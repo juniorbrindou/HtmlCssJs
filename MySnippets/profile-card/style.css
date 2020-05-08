@@ -1,0 +1,82 @@
+body{
+    background-color: #04041a;
+}
+.team-item{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-bottom: 55px;
+    width: 100%;
+    max-width: 270px;
+    color: #555;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.team-item figure{
+    position: relative;
+    height: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 5px;
+    background-size: cover;
+    transition: bottom 300ms ease-in-out;
+}
+
+.team-item figure::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #202020;
+    filter: alpha(opacity=0);
+    transition: opacity 300ms ease-in-out;
+}
+.team-item:hover figure::before{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.team-item .description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 10px 10px;
+    margin-bottom: 59px;
+    background-color: #fff;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 300ms ease-in-out, margin-bottom 300ms ease-in-out;
+}
+.team-item:hover .description{
+    margin-bottom: 0;
+    transform: translateY(0%);
+}
+.team-item .name,
+.team-item .position{
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0!important;
+}
+.team .name{
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.team-item .position{
+    font-size: 12px !important;
+    color: #afafaf;
+}
+.team-social{
+    margin-top: 20px;
+}
+.team-social a{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    font-size: 17px;
+    margin-left: 2px;
+}
