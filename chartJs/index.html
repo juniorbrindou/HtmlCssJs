@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chart</title>
+    <script src="chart.js"></script>
+</head>
+<body>
+    <div style="width: 70%; height:80%">
+
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+<script>
+    Chart.defaults.global.title.display = true;
+    Chart.defaults.global.title.text = 'Graphe';
+    
+</script>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(12, 100, 56)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45,40]
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                title:{
+                    text : 'Grapique avec charte js',
+                    position : 'bottom'
+                },
+                tooltips:{
+                    backgroundColor : 'rgba(220, 100, 99)'
+                }
+            }
+        });
+</script>
+</body>
+</html>
