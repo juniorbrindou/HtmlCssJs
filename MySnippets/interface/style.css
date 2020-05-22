@@ -1,0 +1,60 @@
+.text-white{
+    color:white!important;
+}
+.text-center{
+    text-align: center;
+}
+.text-larger{
+    font-size: x-large;
+}
+.text-right{
+    text-align: right;
+}
+
+
+.p-2{
+    padding: 5px!important;
+}
+.p-6{
+    padding: 6px;
+}
+
+
+.bg-green{
+    background: green;
+}
+.lh-2{
+    line-height: 2;
+}
+.prt--5{
+    position:relative;
+    top:-5px;
+}
+.bg-img1{
+    background: no-repeat url(img1.jpg) center;
+    background-size: 100%;
+    height: 300px;
+}
+
+.pr{
+    position:relative;
+}
+.hov1{
+    transition-duration: 0.5s;
+}
+.hov1:hover{
+    background-color: rgba(0, 128, 0, 0.637) ;
+    transform: skew(-10deg) scale(1.2);
+}
+
+.bg-black{
+    background-color: black;
+    color:grey;
+}
+
+ul{
+    list-style: none;
+}
+.list-item{
+    padding: 1rem;
+}
