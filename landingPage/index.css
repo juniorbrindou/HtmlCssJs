@@ -1,0 +1,12 @@
+.header-home{
+    background-color: #faa61f;
+    background-image: -webkit-linear-gradient(145deg,#faa61f 0%,#ed1847 100%);
+    position: relative;
+    padding-top: 185px;
+    padding-bottom: 180px;
+    overflow: hidden;
+    z-index: 1;
+}
+#home{
+    background: #faa61f;
+}
