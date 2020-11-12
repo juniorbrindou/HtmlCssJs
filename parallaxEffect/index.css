@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 3000px;
+}
+
+.heading{
+    background: url(img/img1.jpg);
+    background-size: cover;
+    height:100Vh;
+    background-attachment: fixed;
+}
+.section-1{
+    background: url(img/img2.jpg);
+    background-size: cover;
+    height:100Vh;
+    background-attachment: fixed;
+}
+.section-2{
+    background: url(img/img3.jpg);
+    background-size: cover;
+    height:100Vh;
+    background-attachment: fixed;
+}
